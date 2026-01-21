@@ -12,15 +12,21 @@ export default function App() {
       {/* Header */}
       <div className="header">
         <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <img src="/logo.png" alt="Business Catalyst" style={{ height: 40 }} />
-            <div>
-              <div style={{ fontSize: 20, fontWeight: 700 }}>Saurav Raj</div>
-              <div style={{ fontSize: 14, color: "#64748b" }}>
-                Founder, <span style={{ color: "#16a34a", fontWeight: 600 }}>Business Catalyst</span>
-              </div>
-            </div>
-          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+  <img
+    src="/logo.png"
+    alt="Business Catalyst"
+    style={{ height: 64, width: "auto" }}
+  />
+<div>
+  <div style={{ fontSize: 22, fontWeight: 800, lineHeight: 1.1, color: "#0f172a" }}>
+    Saurav Raj <span style={{ fontWeight: 600, fontSize: 14 }}>(Ex-Amazonian)</span>
+  </div>
+  <div style={{ fontSize: 15, color: "#16a34a", fontWeight: 600 }}>
+    Marketplace Growth Consultant
+  </div>
+</div>
+</div>
           <button className="button-primary" onClick={() => setPage("pay")}>
             Book Diagnostic
           </button>
